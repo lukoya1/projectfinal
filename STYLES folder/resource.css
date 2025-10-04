@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(209, 208, 208);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+nav {
+      background: #eee;
+      padding: 10px 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Left logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 8px;
+    }
+
+    /* Center nav links */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      padding: 6px 12x;
+    }
+
+    .nav-links li a:hover {
+      background: blue;
+        color: white;
+    }
+
+    /* Right search box */
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 25px;
+      padding: 5px 10px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    .search-box button {
+      background: blue;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background: darkblue;
+    }

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/images/simple.jpg");
+}
+
+nav{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    
+
+}
+
+nav li{
+    height:50px ;
+    justify-content: center;
+    
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    
+}
+
+nav ul li:not(:first-child) a:hover{
+    background-color: rgb(72, 72, 245);
+    color: white;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:last-child{
+    margin-left: auto;
+}
+
+.first-container{
+    display: flex;
+    background-color: rgb(158, 17, 223);
+    margin-top: 51px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    flex: 1;
+}
+
+
+.text-container{
+    padding: 0 0 0 90px;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.big{
+    font-size: 60px;
+    color: white;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    /* You can add a delay if you want: animation-delay: 0.5s; */
+}
+
+.small{
+    font-size: 40px;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    /* You can add a delay if you want: animation-delay: 0.5s; */
+}
+
+.button{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    /* You can add a delay if you want: animation-delay: 0.5s; */
+}
+
+.button a{
+    background-color: rgb(39, 39, 177);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-weight: 500;
+    font-weight: 500; 
+   color: white;
+   text-decoration: none;
+}
+
+@keyframes slideIn {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateX(0); /* Move to original position */
+            }
+        }
+
+.button a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.image-container{
+    padding-top: 40px;
+    margin-left: 12%;
+}
+
+.second-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.image2-container{
+    padding: 70px 0 70px 70px;
+}
+
+.text2-container{
+    align-content: center;
+
+}
+
+.text2-container h3{
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+
+.text2-container p{
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+
+}
+
+.text2-container button{
+    background-color: blue;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.text2-container button:hover{
+    background-color: rgb(131, 131, 131);
+    color: rgb(255, 255, 255);
+}
+
+.third-container{
+    background-color: rgb(221, 237, 253);
+    justify-items: center;
+    /* align-items: center; */
+}
+
+.third-container p{
+    font-size: 12px;
+    padding: 45px 0 14px 0;
+    color: #0b62bc;
+}
+
+.third-container h3{
+    font-size: 25px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    /* background-color: white; */
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.grid-container img{
+    width: 240px;
+    padding: 0;
+}
+
+.container-border{
+    background-color: white;
+    border-radius: 5px;
+    /* border: 3px solid ; */
+    box-shadow:0 2px 6px rgba(0, 0, 0, 0.459) ;
+}
+
+.container-border p{
+    padding: 10px 10px 30px 10px;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+}
+
+.third-container a button{
+    background-color: blue;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-left: 45%;
+}
+
+.third-container a button:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.459);
+
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+      .first-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container{
+        align-items: center;
+        justify-items: center;
+        padding: 40px 0 0 0;
+    }
+
+      .resize{
+        width: 250px;
+        align-items:center ;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .image-container{
+        margin-left: 20%;
+    }
+      
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      .image2-container .text2-container{
+        align-items: center;
+        justify-content: center;
+        
+      } 
+
+      .image2-container{
+        padding: 20px 0 0 20px;
+      }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 180px 180px;
+    }
+
+.grid-container img{
+    width: 180px;
+    padding: 0;
+
+    }
+
+    .text2-container h3{
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+.text2-container p{
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
+.big{
+    font-size: 50px;
+    color: white;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    /* You can add a delay if you want: animation-delay: 0.5s; */
+}
+
+.small{
+    font-size: 30px;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    /* You can add a delay if you want: animation-delay: 0.5s; */
+}
+
+.third-container a button{
+    background-color: blue;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-left: 37%;
+
+}
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+    .first-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container{
+        align-items: center;
+        justify-items: center;
+        padding: 40px 0 0 0;
+    }
+
+      .resize{
+        width: 300px;
+        align-items:center ;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .image-container{
+        margin-left: 30%;
+    }
+      
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      .image2-container .text2-container{
+        align-items: center;
+        justify-content: center;
+        
+      } 
+
+      .image2-container{
+        padding: 20px 0 0 20px;
+      }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 240px 240px;
+    }
+
+
+    }
+
+    /* @media (min-width: 1201px) and (max-width: 1600px) {
+      .image-container{
+        margin-left: 20px;
+      }
+    } */
